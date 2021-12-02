@@ -17,11 +17,118 @@
   <body>
     <div class="screen">
       <div class="container">
-        <div class="form-wrapper">
+        <form class="form-wrapper" onsubmit="toSubmit(event);" action="#" method="post">
           <div class="form-head">
-            <img src="" alt="">
+            <img src="images/city.jpg" alt="" />
           </div>
-        </div>
+
+          <div class="form-item">
+            <div class="line"></div>
+            <h1>Ответ на приглашение</h1>
+
+            <div class="form-item-descp">
+              <p>Адресс: ул Улица, д. 1, Город, 123456</p>
+              <p>
+                Котакты: <a href="tel:+70000000000">(+7) (000) 000-00-00</a>,<a
+                  href="mailto:no_reply@exemple.com"
+                >
+                  no_reply@exemple.com</a
+                >
+              </p>
+            </div>
+          </div>
+
+          <div class="form-item">
+            <div class="line"></div>
+            <h3 class="form-item-title required">Чем занимаетесь?</h3>
+            <input
+              placeholder="Ответ"
+              class="form-item-input"
+              type="text"
+            />
+          </div>
+
+          <div class="form-item">
+
+            <h3 class="form-item-title">У вас есть собака?</h3>
+            <br />
+            <label class="pure-material-radio">
+              <input type="radio" class="type-radio" name="group" value="Есть собака: Да" />
+              Да
+            </label>
+            <br /><br />
+            <label class="pure-material-radio">
+              <input type="radio" class="type-radio" name="group" value="Есть собака: Нет" />
+              Нет
+            </label>
+          </div>
+
+          <div class="form-item">
+
+            <h3 class="form-item-title">У вас есть кот?</h3>
+            <br />
+            <label class="pure-material-radio">
+              <input type="radio" class="type-radio" name="group2" value="Есть кот: Да" />
+              Да
+            </label>
+            <br /><br />
+            <label class="pure-material-radio">
+              <input type="radio" class="type-radio" name="group2" value="Есть кот: Нет" />
+              Нет
+            </label>
+          </div>
+
+          <div class="form-item">
+
+            <h3 class="form-item-title">Что нравится?</h3>
+            <br />
+            <div>
+              <label class="pure-material-radio">
+                <input type="checkbox" value="Нравится: Спать" class="how-like" name="groupChe1" />
+                Спать
+              </label>
+              <br />
+              <br />
+              <label class="pure-material-radio">
+                <input type="checkbox" value="Нравится: Пятница" class="how-like" name="groupChe1" />
+                Пятница </label
+              ><br />
+              <br />
+              <label class="pure-material-radio">
+                <input type="checkbox" value="Нравится: Гачи ремиксы" class="how-like" name="groupChe1" />
+                Гачи ремиксы
+              </label>
+            </div>
+          </div>
+
+          <div class="form-item">
+            <div class="line"></div>
+            <h3 class="form-item-title">Что не нравится?</h3>
+            <br />
+            <div>
+              <label class="pure-material">
+                <input type="checkbox" value="не нравится: Понедельник" class="how-dontlike" name="groupChew" />
+                Понедельник
+              </label>
+              <br />
+              <br />
+              <label class="pure-material">
+                <input type="checkbox" value="не нравится: Разбираться в чужом коде" class="how-dontlike" name="groupChe2" />
+                Разбираться в чужом коде </label
+              ><br />
+              <br />
+              <label class="pure-material">
+                <input type="checkbox" value="не нравится: Просыпаться" class="how-dontlike" name="groupChe2" />
+                Просыпаться 
+              </label>
+            </div>
+          </div>
+
+          <div class="form-bottom">
+            <input value="Отправить" type="submit"/>
+          </div>
+
+        </form>
       </div>
     </div>
 
