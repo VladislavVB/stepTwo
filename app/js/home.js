@@ -1,38 +1,46 @@
-const sendBtn = document.querySelector('.form-bottom button');
-
-
-
+const sendBtn = document.querySelector('.send-btn');
 
 const toSubmit = (e) => {
   e.preventDefault();
 
-
   const formItemInput = document.querySelector('.form-item-input');
-  const radioBtns = document.querySelectorAll('.type-radio');
-  const howLike = document.querySelectorAll('.how-like');
+  const whatLike = document.querySelectorAll('.how-like');
   const howDontLike = document.querySelectorAll('.how-dontlike');
-  const formData = [];
-  const howLikeData = []
-  const howDontLikeData = [];
+  const typeRadioDog = document.querySelectorAll('.type-radio-dog');
+  const typeRadioCat = document.querySelectorAll('.type-radio-cat');
 
+  const dataForSend = {
+    whatDoYouDo: '',
+    dog: false,
+    cat: false,
+    whatLike: [],
+    whatDontLike: [],
+  }
+  dataForSend.whatDoYouDo = formItemInput.value
 
-  formData.push(formItemInput.value)
-  radioBtns.forEach(elem => {
-    if(elem.checked) {
-      formData.push(elem.value)
-    }
-  });
-  howLike.forEach(elem => {
-    if(elem.checked) {
-      howLikeData.push(elem.value)
-      formData.push(howLikeData)
+  typeRadioDog.forEach(elem => {
+    if (elem.checked) {
+      dataForSend.dog = elem.value == 'true' ? true : false;
     }
   })
+
+  typeRadioCat.forEach(elem => {
+    if (elem.checked) {
+      dataForSend.cat = elem.value == 'true' ? true : false;
+    }
+  })
+
+  whatLike.forEach(elem => {
+    if (elem.checked) {
+      dataForSend.whatLike.push(elem.value)
+    }
+  })
+
   howDontLike.forEach(elem => {
-    if(elem.checked) {
-      howDontLikeData.push(elem.value)
-      formData.push(howDontLikeData)
+    if (elem.checked) {
+      dataForSend.whatDontLike.push(elem.value)
     }
   })
-  console.log(formData);
+
+  console.log(dataForSend);
 }

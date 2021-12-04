@@ -17,7 +17,12 @@
   <body>
     <div class="screen">
       <div class="container">
-        <form class="form-wrapper" onsubmit="toSubmit(event);" action="#" method="post">
+        <form
+          class="form-wrapper"
+          onsubmit="toSubmit(event);"
+          action="#"
+          method="post"
+        >
           <div class="form-head">
             <img src="images/city.jpg" alt="" />
           </div>
@@ -41,61 +46,89 @@
           <div class="form-item">
             <div class="line"></div>
             <h3 class="form-item-title required">Чем занимаетесь?</h3>
-            <input
-              placeholder="Ответ"
-              class="form-item-input"
-              type="text"
-            />
+            <input placeholder="Ответ" class="form-item-input" type="text" />
           </div>
 
           <div class="form-item">
-
             <h3 class="form-item-title">У вас есть собака?</h3>
             <br />
             <label class="pure-material-radio">
-              <input type="radio" class="type-radio" name="group" value="Есть собака: Да" />
+              <input
+                type="radio"
+                class="type-radio type-radio-dog"
+                name="group"
+                value="true"
+              />
               Да
             </label>
             <br /><br />
             <label class="pure-material-radio">
-              <input type="radio" class="type-radio" name="group" value="Есть собака: Нет" />
+              <input
+                type="radio"
+                class="type-radio type-radio-dog"
+                name="group"
+                value="false"
+              />
               Нет
             </label>
           </div>
 
           <div class="form-item">
-
             <h3 class="form-item-title">У вас есть кот?</h3>
             <br />
             <label class="pure-material-radio">
-              <input type="radio" class="type-radio" name="group2" value="Есть кот: Да" />
+              <input
+                type="radio"
+                class="type-radio type-radio-cat"
+                name="group2"
+                value="true"
+              />
               Да
             </label>
             <br /><br />
             <label class="pure-material-radio">
-              <input type="radio" class="type-radio" name="group2" value="Есть кот: Нет" />
+              <input
+                type="radio"
+                class="type-radio type-radio-cat"
+                name="group2"
+                value="false"
+              />
               Нет
             </label>
           </div>
 
           <div class="form-item">
-
             <h3 class="form-item-title">Что нравится?</h3>
             <br />
             <div>
               <label class="pure-material-radio">
-                <input type="checkbox" value="Нравится: Спать" class="how-like" name="groupChe1" />
+                <input
+                  type="checkbox"
+                  value="Спать"
+                  class="how-like"
+                  name="Спать"
+                />
                 Спать
               </label>
               <br />
               <br />
               <label class="pure-material-radio">
-                <input type="checkbox" value="Нравится: Пятница" class="how-like" name="groupChe1" />
+                <input
+                  type="checkbox"
+                  value="Пятница"
+                  class="how-like"
+                  name="Пятница"
+                />
                 Пятница </label
               ><br />
               <br />
               <label class="pure-material-radio">
-                <input type="checkbox" value="Нравится: Гачи ремиксы" class="how-like" name="groupChe1" />
+                <input
+                  type="checkbox"
+                  value="Гачи ремиксы"
+                  class="how-like"
+                  name="Гачи ремиксы"
+                />
                 Гачи ремиксы
               </label>
             </div>
@@ -107,27 +140,41 @@
             <br />
             <div>
               <label class="pure-material">
-                <input type="checkbox" value="не нравится: Понедельник" class="how-dontlike" name="groupChew" />
+                <input
+                  type="checkbox"
+                  value="Понедельник"
+                  class="how-dontlike"
+                  name="groupChew"
+                />
                 Понедельник
               </label>
               <br />
               <br />
               <label class="pure-material">
-                <input type="checkbox" value="не нравится: Разбираться в чужом коде" class="how-dontlike" name="groupChe2" />
+                <input
+                  type="checkbox"
+                  value="Разбираться в чужом коде"
+                  class="how-dontlike"
+                  name="groupChe2"
+                />
                 Разбираться в чужом коде </label
               ><br />
               <br />
               <label class="pure-material">
-                <input type="checkbox" value="не нравится: Просыпаться" class="how-dontlike" name="groupChe2" />
-                Просыпаться 
+                <input
+                  type="checkbox"
+                  value="Просыпаться"
+                  class="how-dontlike"
+                  name="groupChe2"
+                />
+                Просыпаться
               </label>
             </div>
           </div>
 
           <div class="form-bottom">
-            <input value="Отправить" type="submit"/>
+            <input class="send-btn" value="Отправить" type="submit" />
           </div>
-
         </form>
       </div>
     </div>
